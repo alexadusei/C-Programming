@@ -1,0 +1,7 @@
+# does a complete build of the stringDelimiter program
+
+rm -f *.o
+gcc -c -Wall stringDelimiterTest.c
+gcc -c -Wall heapReport.c
+gcc -c -Wall stringDelimiter.c
+gcc -o stringDelimiter stringDelimiterTest.o heapReport.o stringDelimiter.o 
